@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: black;
+    color: white;
+    height: 8vh;
+    line-height: 8vh;
+    padding-left: 10px;
+}
+.gameContainer {
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 50px;
+}
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 26%;
+    /* background-color: red; */
+}
+.game button {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 75px;
+    background-color: white;
+    transition: all 0.2s ease-out;
+}
+.game button:hover {
+    background-color: lightcoral;
+}
+.btn1, .btn2, .btn4, .btn5 {
+    border-right: 2px solid rgba(0, 0, 0, 0.543);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.543);
+    border-top: hidden;
+    border-left: hidden;
+}
+.btn7, .btn8 {
+    border-right: 2px solid rgba(0, 0, 0, 0.543);
+    border-top: hidden;
+    border-bottom: hidden;
+    border-left: hidden;
+}
+.btn3, .btn6 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.543);
+    border-left: hidden;
+    border-top: hidden;
+    border-right: hidden;
+}
+.btn9 {
+    border: hidden;
+}
+.text {
+    width: 30%;
+}
+.msgContainer {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.msgContainer button {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    transition: all 0.4s ease-in;
+    /* font-size: 17px; */
+}
+.msgContainer button:hover {
+    border: 1px solid black;
+}
+.text img {
+    width: 0;
+    margin-top: 20px;
+    transition: width 1s ease-in-out;
+}
+
+
+
+
+@media (max-width: 1160px) {
+ /* .gameContainer {
+    gap: 150px;
+ }    */
+     .game {
+        width: 30%;  
+     }
+} 
+@media (max-width: 1000px) {
+    .game {
+        width: 34%;  
+     }
+}
+@media (max-width: 895px) {
+    .text {
+        width: 35%;
+    }    
+    .game {
+        width: 39%;
+    }
+}
+@media (max-width: 768px) {
+    .text {
+        width: 39%;
+    }    
+    .game {
+        width: 43%;
+    }
+}
+@media (max-width: 798px) {  
+    .game {
+        width: 47%;
+    }
+}
+@media (max-width: 640px) {
+    .game {
+        width: 50%;
+    }
+    .text {
+        width: 50%;
+    }
+    .gameContainer {
+        gap: 100px;
+    }
+}
+@media (max-width: 600px) {
+    .game {
+        width: 59%;
+    }
+}
+@media (max-width: 510px) {
+    .game {
+        width: 65%;
+    }
+    .text {
+        width: 60%;
+    }
+}
+@media (max-width: 462px) {
+    .game {
+        width: 73%;
+    }
+    .text {
+        width: 70%;
+    }
+}
+@media (max-width: 411px) {
+    .game {
+        width: 83%;
+    }
+}
+@media (max-width: 362px) {
+    .game button {
+        width: 80px;
+        height: 80px;       
+    }
+    .game {
+        width: 73%;
+    }
+}
+@media (max-width: 330px) {
+    .game {
+        width: 79%;
+    }
+}
